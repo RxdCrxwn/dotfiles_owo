@@ -1,0 +1,25 @@
+# GIMP action-history
+
+(history-item "edit-clear" 2)
+(history-item "edit-paste" 1)
+(history-item "file-quit" 3)
+(history-item "edit-cut" 2)
+(history-item "file-export-as" 1)
+(history-item "edit-copy" 0)
+(history-item "file-overwrite" 1)
+(history-item "select-all" 1)
+(history-item "layers-merge-down" 0)
+(history-item "filters-hue-saturation" 0)
+(history-item "image-crop-to-selection" 1)
+(history-item "layers-new" 0)
+(history-item "layers-alpha-remove" 1)
+(history-item "file-open" 0)
+(history-item "layers-edit" 0)
+(history-item "layers-scale" 0)
+(history-item "dialogs-toolbox" 0)
+(history-item "select-invert" 0)
+(history-item "image-rotate-90" 0)
+(history-item "tools-pencil" 0)
+(history-item "image-flip-vertical" 1)
+
+# end of action-history

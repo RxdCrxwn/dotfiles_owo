@@ -1,0 +1,2282 @@
+[2023-03-08 07:00:53.352] [9709] (engine.cpp:270): Time: Wed Mar  8 07:00:53 2023 WIB logLevel:2
+[2023-03-08 07:00:53.365] [9709] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-03-08 07:00:53.366] [9709] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:83): Create
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:91): CreateForTest
+[2023-03-08 07:00:53.368] [9709] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:133): CheckPlatform
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:144): current platform is Linux
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:992): PlatformAudioLayer
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2023-03-08 07:00:53.368] [9709] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2023-03-08 07:00:53.368] [9709] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:345): AttachAudioBuffer
+[2023-03-08 07:00:53.368] [9709] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2023-03-08 07:00:53.368] [9709] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2023-03-08 07:00:53.368] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2023-03-08 07:00:53.368] [9709] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:355): ActiveAudioLayer
+[2023-03-08 07:00:53.368] [9709] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-03-08 07:00:53.368] [9709] (audio_engine.cpp:462): Creating audio engine: standard
+[2023-03-08 07:00:53.368] [9709] (audio_device_impl.cc:365): Init
+[2023-03-08 07:00:53.373] [9709] (audio_coding.cpp:147): Using software Opus decoder
+[2023-03-08 07:00:53.373] [9709] (audio_coding.cpp:164): Using software Opus encoder
+[2023-03-08 07:00:53.373] [9709] (audio_device_impl.cc:896): RegisterAudioCallback
+[2023-03-08 07:00:53.373] [9709] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2023-03-08 07:00:53.373] [9709] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-03-08 07:00:53.373] [9709] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-03-08 07:00:53.373] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-03-08 07:00:53.373] [9709] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-03-08 07:00:53.373] [9709] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-03-08 07:00:53.373] [9709] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:574): output: 0
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2023-03-08 07:00:53.374] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(1)
+[2023-03-08 07:00:53.374] [9709] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-03-08 07:00:53.374] [9709] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-03-08 07:00:53.374] [9709] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-03-08 07:00:53.374] [9709] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:620): output: 1
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-03-08 07:00:53.374] [9709] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:912): BuiltInAECIsAvailable
+[2023-03-08 07:00:53.374] [9709] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-03-08 07:00:53.374] [9709] (audio_device_impl.cc:915): output: 0
+[2023-03-08 07:00:53.374] [9709] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-03-08 07:00:53.378] [9709] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-03-08 07:00:53.378] [9709] (agc_manager_direct.cc:69): [agc] GetMinMicLevel
+[2023-03-08 07:00:53.378] [9709] (agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+[2023-03-08 07:00:53.378] [9709] (captured_audio_processor.cpp:119): SetNoiseCancellation: 0
+[2023-03-08 07:00:53.378] [9709] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-03-08 07:00:53.515] [9661] (discord.cpp:550): JS console: ["Unsupported Locale","en-GB"]
+[2023-03-08 07:00:53.515] [9661] (discord.cpp:550): JS console: ["Unsupported Locale","en"]
+[2023-03-08 07:00:53.527] [9709] (audio_engine.cpp:187): Setting audio input device: 'Built-in Audio Analog Stereo'
+[2023-03-08 07:00:53.527] [9709] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-03-08 07:00:53.527] [9709] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-03-08 07:00:53.527] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-03-08 07:00:53.527] [9709] (audio_device_impl.cc:789): SetRecordingDevice
+[2023-03-08 07:00:53.527] [9709] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:777): SetRecordingDevice(2)
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:574): output: 1
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-03-08 07:00:53.528] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-03-08 07:00:53.528] [9709] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:620): output: 1
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-03-08 07:00:53.528] [9709] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-03-08 07:00:53.528] [9709] (audio_device_impl.cc:548): SetMicrophoneVolume(26)
+[2023-03-08 07:00:53.528] [9709] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-03-08 07:00:53.530] [9661] (discord.cpp:550): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 178850, Version Hash: ce63c6e16eb31fbd2337a012648569c0a0863bd3"]
+[2023-03-08 07:00:53.884] [9661] (discord.cpp:550): JS console: ["%c[default]","[NATIVE INFO] host 0.0.25, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2023-03-08 07:00:54.028] [9661] (discord.cpp:550): JS console: ["[FAST CONNECT] connected in 1607ms"]
+[2023-03-08 07:00:54.029] [9709] (audio_engine.cpp:187): Setting audio input device: 'Built-in Audio Analog Stereo'
+[2023-03-08 07:00:54.029] [9709] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-03-08 07:00:54.029] [9709] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-03-08 07:00:54.029] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-03-08 07:00:54.029] [9709] (audio_device_impl.cc:789): SetRecordingDevice
+[2023-03-08 07:00:54.029] [9709] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:777): SetRecordingDevice(2)
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-03-08 07:00:54.030] [9709] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:574): output: 1
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-03-08 07:00:54.030] [9709] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-03-08 07:00:54.030] [9709] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:548): SetMicrophoneVolume(26)
+[2023-03-08 07:00:54.030] [9709] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-03-08 07:00:54.030] [9709] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-03-08 07:00:54.030] [9709] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-03-08 07:00:54.030] [9709] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-03-08 07:00:54.031] [9709] (audio_device_impl.cc:620): output: 1
+[2023-03-08 07:00:54.031] [9709] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-03-08 07:00:54.031] [9709] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-03-08 07:00:54.082] [9661] (discord.cpp:550): JS console: ["Initializing krisp module"]
+[2023-03-08 07:00:54.384] [9661] (discord.cpp:550): JS console: ["%c[MediaEngineStore]","Failed to load Krisp module: Failed to setup Krisp module, error code: -3"]
+[2023-03-08 07:00:54.461] [9661] (discord.cpp:550): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-03-08 07:00:54.506] [9661] (discord.cpp:550): JS console: ["%c[Spellchecker]","Switching to en-GB","(available)"]
+[2023-03-08 07:00:54.939] [9661] (discord.cpp:550): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1352:330)\n    at Bn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1378:696)\n    at Wn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1381:356)\n    at Zn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1381:199)\n    at Yn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1380:886)\n    at Kn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1381:697)\n    at zn (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1381:731)\n    at o (https://discord.com/assets/5fb40bbd35d3eeebea90.js:1348:961)\n    at Object.918513 (https://discord.com/assets/25b786bc1f465517ec89.js:21:346)\n    at l (https://discord.com/assets/cd419838ea4a5acfcc4a.js:1:154)\n    at Object.908570 (https://discord.com/assets/25b786bc1f465517ec89.js:14:240)\n    at l (https://discord.com/assets/cd419838ea4a5acfcc4a.js:1:154)\n    at Object.101577 (https://discord.com/assets/25b786bc1f465517ec89.js:2:330)\n    at l (https://discord.com/assets/cd419838ea4a5acfcc4a.js:1:154)\n    at Object.877271 (https://discord.com/assets/e829cda7b62fa3151743.js:358:101)\n    at l (https://discord.com/assets/cd419838ea4a5acfcc4a.js:1:154)\n    at Module.694824 (https://discord.com/assets/6768c84dc6ea283445d1.js:41:375)\n    at Function.l (https://discord.com/assets/cd419838ea4a5acfcc4a.js:1:154)"]
+[2023-03-08 07:00:54.983] [9661] (discord.cpp:550): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-03-08 07:00:54.994] [9661] (discord.cpp:550): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-03-08 07:00:56.192] [9661] (discord.cpp:550): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-03-08 07:00:56.200] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-03-08 07:00:56.201] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-03-08 07:00:56.201] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2023-03-08 07:00:56.202] [9661] (discord.cpp:550): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2023-03-08 07:00:56.202] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2023-03-08 07:00:56.212] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-b-8kqw: 0, heartbeat interval: 41250, took 11 ms"]
+[2023-03-08 07:00:56.261] [9661] (discord.cpp:550): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-03-08 07:00:56.380] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:00:56.380] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:00:56.381] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:00:56.524] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Injecting BD Styles"]
+[2023-03-08 07:00:56.526] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DataStore"]
+[2023-03-08 07:00:56.530] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing LocaleManager"]
+[2023-03-08 07:00:56.543] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Settings"]
+[2023-03-08 07:00:56.544] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DOMManager"]
+[2023-03-08 07:00:56.545] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Waiting for connection..."]
+[2023-03-08 07:00:58.461] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[READY] took 2260ms, as 9dcbc34687c189be2db8cbe291d992e4 via \ngateway-prd-us-east1-b-8kqw: 260.442\n|  id_created: 0.893\n|  session_lookup_time: 14.949\n|  session_lookup_finished: 0.017\n|  discord-sessions-blue-prd-2-208: 219.973\n|  |  start_session: 166.217\n|  |  |  discord-api-76dbc6889c-s9ccd: 146.297\n|  |  |  |  get_user: 18.691\n|  |  |  |  get_guilds: 44.629\n|  |  |  |  user_settings_proto: 0.166\n|  |  |  |  relationships: 28.5\n|  |  |  |  friend_suggestion: 0.085\n|  |  |  |  connections: 0.411\n|  |  |  |  serialized_read_states: 0.009\n|  |  |  |  pending_payments: 0.002\n|  |  |  |  send_scheduled_deletion_message: 0.002\n|  |  |  |  sanitize_premium_perks: 0.002\n|  |  |  |  guild_join_requests: 0.002\n|  |  |  |  user_guild_settings: 0.001\n|  |  |  |  serialized_private_channels: 0.002\n|  |  |  |  user_segments: 0.002\n|  |  |  |  experiments: 12.953\n|  |  |  |  affine_user_ids: 28.248\n|  |  |  |  required_action: 0.007\n|  |  |  |  authorized_ip_coro: 0.002\n|  |  starting_guild_connect: 0.058\n|  |  presence_started: 0.405\n|  |  guilds_started: 1.51\n|  |  guilds_connect: 34.507\n|  |  presence_connect: 0.002\n|  |  connect_finished: 34.529\n|  |  build_ready: 15.556\n|  |  clean_ready: 0.002\n|  |  optimize_ready: 1.545\n|  |  split_ready: 0.148"]
+[2023-03-08 07:00:58.498] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","Updating resume url to wss://gateway-us-east1-b.discord.gg"]
+[2023-03-08 07:00:58.504] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 2304ms"]
+[2023-03-08 07:00:58.582] [9661] (discord.cpp:550): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2023-03-08 07:00:58.609] [9661] (discord.cpp:550): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-03-08 07:00:58.612] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-03-08 07:00:58.613] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Added account: redprawn"]
+[2023-03-08 07:00:58.665] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetching messages for 881926043445895168 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-03-08 07:00:58.726] [9661] (discord.cpp:550): JS console: ["%c[ConnectionStore]","Dispatched 3 messages in 198ms"]
+[2023-03-08 07:00:58.727] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Editor"]
+[2023-03-08 07:00:58.728] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 881926043445895168, remote_fetch_completed: false)"]
+[2023-03-08 07:00:59.246] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 881926043445895168 isBefore:false isAfter:false"]
+[2023-03-08 07:00:59.383] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:00:59.383] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:00:59.384] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:00:59.573] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Builtins"]
+[2023-03-08 07:00:59.573] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2023-03-08 07:00:59.574] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch content."]
+[2023-03-08 07:00:59.575] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [PublicServers]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2023-03-08 07:00:59.618] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [WindowTransparency]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2023-03-08 07:00:59.618] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Plugins"]
+[2023-03-08 07:00:59.619] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [PluginManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch plugin addons."]
+[2023-03-08 07:00:59.619] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Themes"]
+[2023-03-08 07:00:59.661] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [ThemeManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch theme addons."]
+[2023-03-08 07:00:59.661] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Updater"]
+[2023-03-08 07:00:59.673] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Removing Loading Icon"]
+[2023-03-08 07:00:59.673] [9661] (discord.cpp:550): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Collecting Startup Errors"]
+[2023-03-08 07:00:59.718] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","WS Connected"]
+[2023-03-08 07:01:00.029] [9661] (discord.cpp:550): JS console: ["%c[Flux]","Slow dispatch on GAMES_DATABASE_UPDATE: 253.60000000009313ms"]
+[2023-03-08 07:01:00.055] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:00.075] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Profile updated for redprawn: isPremium = false"]
+[2023-03-08 07:01:00.076] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Devices updated for redprawn:","[object Object]"]
+[2023-03-08 07:01:02.386] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:02.467] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:02.468] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:05.470] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:05.552] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:05.552] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:07.533] [9661] (discord.cpp:550): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/747105563661303828/881926043445895168"]
+[2023-03-08 07:01:08.554] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:08.636] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:08.636] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:10.026] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:11.639] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:11.722] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:11.722] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:13.957] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetching messages for 754954747538178068 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-03-08 07:01:13.958] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 754954747538178068, remote_fetch_completed: false)"]
+[2023-03-08 07:01:14.043] [9661] (discord.cpp:550): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/747105563661303828/754954747538178068"]
+[2023-03-08 07:01:14.315] [9661] (discord.cpp:550): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 754954747538178068 isBefore:false isAfter:false"]
+[2023-03-08 07:01:14.725] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:14.806] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:14.807] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:16.296] [9661] (discord.cpp:550): JS console: ["%c[RTCLatencyTestManager]","RTC cached preferred region is singapore"]
+[2023-03-08 07:01:16.672] [9661] (discord.cpp:550): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-03-08 07:01:17.809] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:17.890] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:17.891] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:20.894] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:20.975] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:20.976] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:23.978] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:24.061] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:24.061] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:25.034] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:25.503] [9661] (discord.cpp:550): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","273436","273442","[object Object]"]
+[2023-03-08 07:01:27.063] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:27.145] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:27.145] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:30.148] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:30.230] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:30.230] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:33.233] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:33.315] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:33.315] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:35.032] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:36.318] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:36.400] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:36.400] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:39.403] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:39.486] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:39.486] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:40.034] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:42.488] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:42.570] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:42.571] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:45.573] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:45.655] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:45.655] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:48.657] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:48.738] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:48.739] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:50.040] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:51.739] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:51.821] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:51.821] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:54.823] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:54.904] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:54.905] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:01:55.038] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:01:57.907] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:57.989] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:01:57.990] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:00.992] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:01.075] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:01.075] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:04.078] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:04.160] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:04.161] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:07.163] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:07.246] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:07.246] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:10.042] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:10.249] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:10.332] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:10.332] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:12.257] [9661] (discord.cpp:550): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","273442","273453","[object Object]"]
+[2023-03-08 07:02:13.334] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:13.416] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:13.416] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:15.039] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:16.418] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:16.501] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:16.502] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:19.504] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:19.585] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:19.586] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:20.041] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:22.588] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:22.588] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:22.589] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:25.044] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:25.591] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:25.673] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:25.673] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:28.675] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:28.757] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:28.758] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:31.760] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:31.761] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:31.761] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:34.763] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:34.763] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:34.764] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:35.045] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:37.766] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:37.848] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:37.848] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:40.045] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:40.851] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:40.933] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:40.934] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:43.937] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:44.018] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:44.018] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:47.020] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:47.102] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:47.102] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:50.059] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:02:50.104] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:50.186] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:50.186] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:53.188] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:53.270] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:53.270] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:56.272] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:56.355] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:56.355] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:02:59.356] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:59.437] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:02:59.437] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:02.440] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:02.522] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:02.522] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:05.525] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:05.606] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:05.606] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:08.609] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:08.691] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:08.691] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:11.694] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:11.776] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:11.776] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:14.779] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:14.860] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:14.861] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:17.863] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:17.945] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:17.945] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:20.112] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:03:20.948] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:21.030] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:21.030] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:24.033] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:24.116] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:24.116] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:27.119] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:27.202] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:27.202] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:30.130] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:03:30.204] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:30.287] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:30.287] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:33.289] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:33.371] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:33.371] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:36.374] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:36.455] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:36.456] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:39.458] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:39.540] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:39.540] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:42.543] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:42.625] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:42.626] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:45.628] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:45.710] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:45.710] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:48.713] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:48.795] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:48.796] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:51.799] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:51.880] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:51.880] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:54.883] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:54.965] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:54.965] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:03:57.968] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:58.050] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:03:58.050] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:00.176] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:04:01.051] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:01.133] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:01.133] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:04.135] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:04.218] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:04.218] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:07.220] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:07.302] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:07.302] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:10.304] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:10.385] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:10.386] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:13.388] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:13.470] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:13.470] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:15.201] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:04:16.473] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:16.554] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:16.555] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:19.558] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:19.640] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:19.640] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:22.642] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:22.724] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:22.724] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:25.727] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:25.810] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:25.810] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:28.813] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:28.895] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:28.895] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:31.898] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:31.980] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:31.980] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:34.982] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:35.064] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:35.064] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:38.068] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:38.149] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:38.149] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:40.240] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:04:41.152] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:41.234] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:41.234] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:44.236] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:44.318] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:44.319] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:45.247] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:04:47.321] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:47.403] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:47.403] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:50.405] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:50.487] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:50.487] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:53.489] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:53.571] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:53.571] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:55.267] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:04:56.573] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:56.656] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:56.656] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:04:59.659] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:59.740] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:04:59.740] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:02.743] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:02.825] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:02.826] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:05.829] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:05.910] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:05.910] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:08.913] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:08.995] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:08.995] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:11.998] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:12.080] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:12.080] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:15.083] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:15.165] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:15.165] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:18.168] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:18.250] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:18.250] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:21.252] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:21.334] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:21.334] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:24.336] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:24.418] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:24.418] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:25.316] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:05:27.420] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:27.502] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:27.502] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:30.505] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:30.587] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:30.588] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:33.590] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:33.672] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:33.672] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:35.331] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:05:36.675] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:36.756] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:36.757] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:39.759] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:39.841] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:39.841] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:42.844] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:42.925] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:42.926] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:45.929] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:46.010] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:46.010] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:49.013] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:49.095] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:49.095] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:52.096] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:52.178] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:52.178] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:55.181] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:55.263] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:55.263] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:05:58.266] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:58.348] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:05:58.348] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:00.371] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:06:01.350] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:01.432] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:01.432] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:04.434] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:04.516] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:04.517] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:07.519] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:07.601] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:07.601] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:10.386] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:06:10.603] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:10.685] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:10.685] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:13.688] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:13.770] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:13.770] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:16.773] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:16.855] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:16.855] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:19.857] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:19.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:19.939] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:22.942] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:23.024] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:23.024] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:26.026] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:26.109] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:26.109] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:29.111] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:29.194] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:29.194] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:30.421] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:06:32.197] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:32.278] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:32.278] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:35.281] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:35.362] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:35.363] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:38.365] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:38.447] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:38.448] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:40.435] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:06:41.450] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:41.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:41.532] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:44.534] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:44.616] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:44.616] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:47.618] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:47.699] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:47.700] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:50.702] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:50.784] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:50.784] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:53.786] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:53.867] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:53.868] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:56.870] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:56.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:06:56.952] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:06:59.954] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:00.037] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:00.037] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:03.039] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:03.121] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:03.121] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:05.473] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:07:06.124] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:06.206] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:06.206] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:09.209] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:09.291] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:09.291] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:12.294] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:12.376] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:12.376] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:15.379] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:15.461] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:15.461] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:15.489] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:07:18.463] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:18.545] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:18.545] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:21.548] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:21.630] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:21.630] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:24.633] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:24.715] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:24.715] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:27.717] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:27.799] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:27.799] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:30.801] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:30.883] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:30.883] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:33.885] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:33.968] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:33.968] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:35.521] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:07:36.970] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:37.052] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:37.052] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:40.054] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:40.136] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:40.137] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:43.140] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:43.222] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:43.222] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:45.536] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:07:46.225] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:46.309] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:46.309] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:49.311] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:49.393] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:49.393] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:52.396] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:52.478] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:52.479] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:55.482] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:55.563] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:55.563] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:07:58.565] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:58.646] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:07:58.647] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:01.649] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:01.731] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:01.731] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:04.734] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:04.815] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:04.816] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:05.567] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:08:07.818] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:07.899] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:07.900] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:10.902] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:10.983] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:10.984] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:13.986] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:14.068] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:14.068] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:15.593] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:08:17.070] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:17.152] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:17.153] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:20.156] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:20.237] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:20.237] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:23.240] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:23.322] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:23.322] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:26.323] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:26.405] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:26.405] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:29.407] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:29.488] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:29.489] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:32.492] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:32.573] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:32.573] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:35.575] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:35.629] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:08:35.657] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:35.657] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:38.659] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:38.741] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:38.741] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:40.636] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:08:41.743] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:41.824] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:41.825] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:44.828] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:44.910] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:44.910] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:47.913] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:47.995] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:47.995] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:50.998] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:51.080] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:51.080] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:54.083] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:54.165] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:54.165] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:08:57.167] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:57.249] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:08:57.249] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:00.252] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:00.334] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:00.334] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:03.337] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:03.419] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:03.419] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:05.687] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:09:06.420] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:06.502] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:06.502] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:09.506] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:09.587] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:09.587] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:12.588] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:12.669] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:12.669] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:15.672] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:15.701] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:09:15.755] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:15.755] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:18.758] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:18.840] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:18.841] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:21.843] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:21.924] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:21.925] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:24.928] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:25.010] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:25.010] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:28.012] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:28.094] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:28.094] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:31.097] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:31.178] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:31.179] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:34.182] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:34.262] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:34.263] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:35.739] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:09:37.265] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:37.348] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:37.349] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:40.351] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:40.433] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:40.433] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:43.435] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:43.517] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:43.517] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:45.753] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:09:46.520] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:46.601] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:46.602] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:49.605] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:49.686] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:49.686] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:52.689] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:52.770] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:52.771] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:55.773] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:55.855] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:55.856] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:09:58.859] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:58.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:09:58.940] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:01.942] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:02.024] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:02.024] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:05.027] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:05.107] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:05.108] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:05.786] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:10:08.110] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:08.192] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:08.192] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:11.195] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:11.277] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:11.277] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:14.280] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:14.362] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:14.362] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:15.801] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:10:17.365] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:17.447] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:17.447] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:20.449] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:20.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:20.531] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:23.533] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:23.614] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:23.615] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:26.617] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:26.699] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:26.700] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:29.702] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:29.784] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:29.784] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:32.786] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:32.868] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:32.868] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:35.854] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:10:35.870] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:35.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:35.952] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:38.955] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:39.036] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:39.037] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:42.039] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:42.122] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:42.122] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:45.125] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:45.207] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:45.207] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:45.868] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:10:48.210] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:48.292] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:48.292] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:51.294] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:51.376] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:51.376] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:54.379] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:54.462] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:54.462] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:10:57.465] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:57.547] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:10:57.547] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:00.550] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:00.631] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:00.632] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:03.634] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:03.716] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:03.716] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:05.898] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:11:06.718] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:06.800] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:06.800] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:09.803] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:09.886] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:09.887] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:12.889] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:12.971] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:12.971] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:15.916] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:11:15.974] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:16.055] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:16.056] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:19.058] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:19.140] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:19.140] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:22.143] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:22.224] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:22.225] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:25.227] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:25.310] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:25.310] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:28.313] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:28.394] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:28.395] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:31.397] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:31.479] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:31.479] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:34.482] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:34.563] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:34.564] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:37.566] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:37.648] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:37.648] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:40.651] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:40.731] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:40.732] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:40.968] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:11:43.734] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:43.816] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:43.816] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:46.818] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:46.901] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:46.901] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:49.903] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:49.985] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:49.985] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:50.983] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:11:52.988] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:53.069] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:53.070] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:56.072] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:56.154] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:56.154] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:11:59.157] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:59.238] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:11:59.239] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:02.242] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:02.323] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:02.323] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:05.326] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:05.408] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:05.408] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:08.411] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:08.493] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:08.493] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:11.015] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:12:11.495] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:11.577] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:11.578] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:14.581] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:14.662] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:14.662] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:17.665] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:17.747] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:17.747] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:20.749] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:20.831] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:20.832] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:21.031] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:12:23.834] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:23.916] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:23.916] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:26.918] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:27.000] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:27.000] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:30.002] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:30.084] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:30.085] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:33.088] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:33.170] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:33.170] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:36.173] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:36.255] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:36.255] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:39.258] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:39.340] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:39.340] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:41.064] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:12:42.344] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:42.425] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:42.426] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:45.426] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:45.508] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:45.508] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:48.510] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:48.592] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:48.592] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:51.080] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:12:51.594] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:51.676] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:51.676] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:54.677] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:54.760] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:54.760] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:12:57.763] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:57.844] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:12:57.845] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:00.848] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:00.930] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:00.930] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:03.932] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:04.013] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:04.014] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:07.015] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:07.096] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:07.096] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:10.099] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:10.181] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:10.182] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:11.112] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:13:13.184] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:13.266] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:13.266] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:16.269] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:16.350] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:16.351] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:19.354] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:19.435] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:19.435] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:21.126] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:13:22.438] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:22.518] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:22.519] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:25.521] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:25.603] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:25.603] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:28.606] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:28.687] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:28.688] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:31.691] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:31.773] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:31.773] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:34.776] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:34.859] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:34.859] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:37.862] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:37.945] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:37.945] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:40.948] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:41.029] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:41.030] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:41.156] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:13:44.032] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:44.114] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:44.114] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:47.117] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:47.198] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:47.199] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:50.201] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:50.283] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:50.283] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:51.170] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:13:53.285] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:53.368] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:53.368] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:56.370] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:56.452] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:56.452] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:13:59.455] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:59.538] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:13:59.538] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:02.540] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:02.622] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:02.622] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:05.625] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:05.707] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:05.707] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:08.709] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:08.791] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:08.791] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:11.199] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:14:11.794] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:11.876] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:11.876] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:14.879] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:14.961] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:14.961] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:17.964] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:18.046] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:18.046] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:21.049] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:21.131] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:21.131] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:21.216] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:14:24.134] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:24.216] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:24.216] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:27.218] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:27.300] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:27.301] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:30.303] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:30.385] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:30.385] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:33.387] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:33.469] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:33.469] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:36.471] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:36.553] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:36.553] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:39.555] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:39.635] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:39.636] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:41.247] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:14:42.639] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:42.721] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:42.721] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:45.723] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:45.805] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:45.806] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:48.808] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:48.890] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:48.890] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:51.267] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:14:51.892] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:51.974] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:51.974] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:54.976] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:55.060] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:55.060] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:14:58.063] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:58.145] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:14:58.146] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:01.148] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:01.230] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:01.230] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:04.232] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:04.314] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:04.314] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:07.316] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:07.398] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:07.398] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:10.401] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:10.482] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:10.483] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:11.305] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:15:13.485] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:13.567] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:13.567] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:16.570] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:16.652] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:16.652] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:19.654] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:19.736] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:19.736] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:21.321] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:15:22.739] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:22.820] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:22.821] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:25.824] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:25.906] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:25.906] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:28.908] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:28.990] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:28.990] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:31.992] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:32.074] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:32.074] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:35.077] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:35.159] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:35.159] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:38.161] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:38.243] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:38.243] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:41.245] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:41.327] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:41.327] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:44.330] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:44.413] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:44.413] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:47.415] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:47.498] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:47.498] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:50.500] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:50.581] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:50.582] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:53.584] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:53.666] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:53.666] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:56.669] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:56.751] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:56.751] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:15:59.753] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:59.835] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:15:59.836] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:01.380] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:16:02.838] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:02.921] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:02.921] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:05.923] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:06.005] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:06.006] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:09.008] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:09.091] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:09.091] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:12.094] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:12.175] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:12.176] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:15.178] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:15.260] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:15.260] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:16.404] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:16:18.263] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:18.345] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:18.345] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:21.348] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:21.430] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:21.430] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:24.432] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:24.514] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:24.514] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:27.517] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:27.599] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:27.600] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:30.602] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:30.684] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:30.684] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:33.687] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:33.769] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:33.769] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:36.771] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:36.853] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:36.853] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:39.855] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:39.937] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:39.937] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:42.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:43.021] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:43.021] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:46.023] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:46.105] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:46.105] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:49.107] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:49.189] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:49.189] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:51.462] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:16:52.192] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:52.274] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:52.274] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:55.277] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:55.360] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:55.360] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:16:58.363] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:58.446] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:16:58.446] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:01.449] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:01.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:01.532] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:04.534] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:04.616] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:04.616] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:06.483] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:17:07.618] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:07.700] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:07.701] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:10.703] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:10.785] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:10.785] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:13.788] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:13.869] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:13.870] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:16.871] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:16.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:16.953] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:19.955] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:20.036] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:20.037] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:23.039] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:23.121] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:23.121] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:26.124] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:26.206] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:26.207] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:29.209] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:29.291] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:29.292] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:32.294] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:32.376] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:32.377] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:35.380] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:35.461] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:35.461] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:38.463] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:38.545] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:38.545] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:41.538] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:17:41.548] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:41.630] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:41.631] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:44.634] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:44.715] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:44.715] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:47.718] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:47.800] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:47.800] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:50.803] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:50.885] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:50.885] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:53.887] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:53.969] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:53.969] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:17:56.561] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:17:56.972] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:57.053] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:17:57.054] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:00.057] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:00.138] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:00.138] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:03.141] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:03.223] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:03.223] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:06.226] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:06.307] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:06.307] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:09.310] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:09.392] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:09.392] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:12.396] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:12.477] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:12.477] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:15.478] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:15.560] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:15.560] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:18.563] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:18.645] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:18.645] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:21.648] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:21.730] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:21.730] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:24.733] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:24.815] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:24.816] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:27.818] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:27.900] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:27.900] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:30.903] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:30.985] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:30.986] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:33.989] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:34.070] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:34.070] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:37.073] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:37.155] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:37.155] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:40.159] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:40.240] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:40.240] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:41.638] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:18:43.241] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:43.322] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:43.322] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:46.325] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:46.408] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:46.408] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:49.408] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:49.490] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:49.490] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:52.492] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:52.573] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:52.574] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:55.577] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:55.658] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:55.658] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:18:58.661] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:58.743] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:18:58.743] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:01.668] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:19:01.744] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:01.825] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:01.825] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:04.828] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:04.910] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:04.910] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:07.913] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:07.994] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:07.995] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:10.997] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:11.079] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:11.079] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:14.082] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:14.164] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:14.164] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:17.166] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:17.249] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:17.249] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:20.251] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:20.334] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:20.334] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:23.336] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:23.418] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:23.418] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:26.420] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:26.502] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:26.502] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:29.505] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:29.587] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:29.588] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:32.591] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:32.672] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:32.672] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:35.675] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:35.757] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:35.757] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:36.713] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:19:38.760] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:38.841] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:38.841] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:41.720] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:19:41.844] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:41.925] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:41.926] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:44.928] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:45.010] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:45.010] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:46.727] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:19:48.013] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:48.095] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:48.095] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:51.099] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:51.180] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:51.180] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:54.183] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:54.265] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:54.265] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:19:56.742] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:19:57.267] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:57.349] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:19:57.349] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:00.351] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:00.432] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:00.433] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:03.435] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:03.516] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:03.517] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:06.519] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:06.601] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:06.601] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:09.604] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:09.685] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:09.686] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:12.688] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:12.770] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:12.770] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:15.771] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:15.853] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:15.853] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:18.855] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:18.937] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:18.937] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:21.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:22.021] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:22.021] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:25.024] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:25.106] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:25.106] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:28.108] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:28.190] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:28.190] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:31.193] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:31.274] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:31.275] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:34.277] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:34.359] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:34.359] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:36.797] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:20:37.361] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:37.443] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:37.443] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:40.446] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:40.528] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:40.528] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:41.804] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:20:43.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:43.612] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:43.612] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:46.614] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:46.696] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:46.696] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:49.699] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:49.781] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:49.782] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:51.818] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:20:52.784] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:52.866] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:52.866] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:55.868] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:55.950] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:55.950] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:20:58.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:59.033] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:20:59.034] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:02.036] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:02.118] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:02.119] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:05.121] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:05.203] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:05.203] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:08.206] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:08.289] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:08.289] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:11.292] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:11.374] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:11.374] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:14.377] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:14.459] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:14.460] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:17.463] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:17.545] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:17.546] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:20.548] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:20.629] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:20.630] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:23.632] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:23.714] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:23.714] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:26.717] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:26.800] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:26.800] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:26.859] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:21:29.802] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:29.884] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:29.884] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:32.886] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:32.968] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:32.968] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:35.971] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:36.055] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:36.055] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:39.059] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:39.140] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:39.140] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:41.884] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:21:42.143] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:42.225] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:42.225] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:45.227] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:45.310] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:45.310] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:48.312] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:48.394] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:48.394] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:51.396] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:51.479] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:51.480] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:54.482] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:54.563] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:54.564] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:21:57.566] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:57.648] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:21:57.648] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:00.650] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:00.733] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:00.733] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:03.735] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:03.817] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:03.818] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:06.820] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:06.903] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:06.903] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:09.906] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:09.988] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:09.988] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:12.991] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:13.073] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:13.073] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:16.075] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:16.157] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:16.157] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:16.941] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:22:19.159] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:19.241] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:19.241] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:22.244] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:22.326] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:22.326] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:25.329] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:25.411] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:25.411] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:28.414] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:28.496] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:28.496] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:31.499] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:31.581] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:31.581] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:31.966] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:22:34.583] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:34.665] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:34.665] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:37.667] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:37.749] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:37.749] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:40.751] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:40.833] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:40.833] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:43.836] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:43.920] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:43.920] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:46.923] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:47.004] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:47.004] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:50.006] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:50.087] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:50.088] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:53.091] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:53.173] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:53.173] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:56.176] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:56.258] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:56.258] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:22:59.261] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:59.342] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:22:59.343] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:02.345] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:02.427] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:02.427] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:05.430] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:05.512] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:05.512] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:08.514] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:08.596] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:08.596] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:11.599] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:11.679] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:11.680] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:12.028] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:23:14.682] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:14.762] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:14.763] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:17.765] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:17.847] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:17.847] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:20.849] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:20.931] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:20.931] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:23.934] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:24.016] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:24.016] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:27.019] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:27.047] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:23:27.100] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:27.101] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:30.104] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:30.185] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:30.185] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:33.188] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:33.269] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:33.270] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:36.272] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:36.354] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:36.354] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:39.357] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:39.440] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:39.440] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:42.442] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:42.524] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:42.524] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:45.527] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:45.609] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:45.609] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:48.612] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:48.694] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:48.694] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:51.697] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:51.779] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:51.779] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:54.783] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:54.864] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:54.864] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:23:57.866] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:57.947] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:23:57.947] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:00.949] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:01.032] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:01.032] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:04.034] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:04.117] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:04.117] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:07.107] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:24:07.120] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:07.202] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:07.202] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:10.204] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:10.286] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:10.286] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:13.288] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:13.369] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:13.369] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:16.372] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:16.454] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:16.454] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:19.457] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:19.539] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:19.540] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:22.126] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:24:22.542] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:22.624] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:22.624] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:25.626] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:25.708] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:25.708] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:28.710] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:28.793] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:28.793] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:31.795] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:31.877] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:31.877] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:34.880] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:34.961] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:34.962] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:37.964] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:38.047] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:38.047] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:41.049] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:41.131] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:41.132] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:44.134] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:44.216] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:44.216] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:47.219] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:47.301] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:47.301] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:50.303] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:50.385] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:50.386] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:53.388] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:53.470] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:53.470] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:56.473] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:56.555] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:56.555] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:24:59.558] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:59.640] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:24:59.640] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:02.192] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:25:02.643] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:02.725] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:02.725] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:05.727] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:05.809] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:05.809] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:07.199] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:25:08.812] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:08.893] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:08.893] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:11.895] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:11.977] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:11.977] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:14.979] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:15.060] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:15.060] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:17.217] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:25:18.062] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:18.143] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:18.144] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:21.147] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:21.228] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:21.228] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:24.231] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:24.312] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:24.313] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:27.316] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:27.398] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:27.398] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:30.400] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:30.482] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:30.482] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:33.485] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:33.566] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:33.566] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:36.569] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:36.651] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:36.651] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:39.654] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:39.735] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:39.736] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:42.738] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:42.820] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:42.820] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:45.823] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:45.904] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:45.905] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:48.907] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:48.989] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:48.990] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:51.993] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:52.074] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:52.074] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:55.077] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:55.159] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:55.159] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:25:57.282] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:25:58.163] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:58.244] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:25:58.244] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:01.247] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:01.329] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:01.329] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:04.332] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:04.415] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:04.415] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:07.417] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:07.499] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:07.500] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:10.502] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:10.583] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:10.584] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:12.298] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:26:13.586] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:13.668] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:13.668] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:16.670] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:16.752] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:16.752] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:17.298] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:26:19.755] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:19.836] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:19.837] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:22.840] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:22.923] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:22.923] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:25.925] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:26.007] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:26.008] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:29.010] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:29.092] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:29.092] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:32.094] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:32.176] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:32.176] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:35.179] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:35.260] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:35.261] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:38.263] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:38.345] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:38.345] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:41.347] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:41.428] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:41.429] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:42.304] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:26:44.432] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:44.513] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:44.513] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:47.304] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:26:47.515] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:47.597] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:47.598] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:50.600] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:50.682] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:50.682] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:53.685] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:53.766] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:53.766] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:56.769] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:56.851] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:56.852] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:26:57.313] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:26:59.854] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:59.937] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:26:59.937] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:02.940] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:03.021] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:03.022] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:06.024] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:06.106] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:06.106] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:09.109] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:09.191] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:09.192] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:12.195] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:12.276] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:12.277] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:15.279] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:15.361] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:15.361] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:18.363] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:18.445] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:18.445] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:21.447] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:21.528] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:21.528] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:24.530] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:24.612] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:24.612] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:27.614] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:27.695] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:27.696] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:30.698] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:30.780] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:30.780] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:32.367] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:27:33.782] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:33.864] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:33.864] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:36.867] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:36.949] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:36.950] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:39.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:40.034] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:40.034] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:43.037] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:43.119] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:43.120] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:46.122] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:46.205] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:46.205] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:47.389] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:27:49.208] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:49.289] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:49.290] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:52.293] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:52.374] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:52.374] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:55.377] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:55.459] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:55.459] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:27:58.462] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:58.542] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:27:58.543] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:01.545] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:01.628] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:01.628] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:04.629] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:04.710] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:04.710] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:07.712] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:07.794] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:07.794] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:10.796] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:10.878] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:10.879] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:13.881] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:13.963] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:13.963] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:16.966] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:17.047] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:17.048] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:17.447] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:28:20.050] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:20.132] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:20.132] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:23.135] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:23.218] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:23.218] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:26.220] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:26.302] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:26.302] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:29.305] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:29.388] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:29.388] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:32.390] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:32.471] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:28:32.472] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:32.472] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:35.475] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:35.556] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:35.556] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:38.559] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:38.641] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:38.641] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:41.644] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:41.726] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:41.726] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:44.729] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:44.812] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:44.812] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:47.814] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:47.896] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:47.896] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:50.898] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:50.981] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:50.981] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:53.983] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:54.065] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:54.066] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:28:57.068] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:57.151] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:28:57.151] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:00.154] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:00.235] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:00.235] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:02.512] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:29:03.238] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:03.321] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:03.321] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:06.324] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:06.406] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:06.406] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:09.407] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:09.489] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:09.489] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:12.490] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:12.527] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:29:12.572] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:12.572] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:15.575] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:15.656] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:15.657] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:18.659] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:18.740] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:18.741] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:21.743] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:21.825] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:21.825] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:24.827] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:24.908] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:24.909] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:27.911] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:27.993] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:27.993] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:30.996] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:31.077] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:31.078] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:34.080] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:34.162] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:34.162] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:37.165] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:37.247] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:37.248] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:40.251] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:40.333] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:40.333] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:42.573] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:29:43.336] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:43.418] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:43.418] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:46.420] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:46.502] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:46.502] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:49.505] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:49.586] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:49.587] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:52.587] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:29:52.589] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:52.670] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:52.671] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:55.674] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:55.756] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:55.756] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:29:58.759] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:58.840] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:29:58.841] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:01.843] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:01.926] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:01.926] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:04.928] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:05.009] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:05.010] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:08.012] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:08.093] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:08.094] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:11.096] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:11.179] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:11.179] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:14.181] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:14.263] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:14.263] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:17.265] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:17.347] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:17.347] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:20.349] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:20.430] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:20.431] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:22.628] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:30:23.433] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:23.515] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:23.515] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:26.517] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:26.599] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:26.599] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:29.602] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:29.683] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:29.683] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:32.685] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:32.766] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:32.767] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:35.769] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:35.853] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:35.853] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:37.654] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:30:38.855] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:38.936] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:38.937] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:41.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:42.021] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:42.021] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:45.023] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:45.105] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:45.106] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:48.108] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:48.190] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:48.190] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:51.193] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:51.274] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:51.275] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:54.277] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:54.359] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:54.359] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:30:57.362] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:57.444] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:30:57.444] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:00.447] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:00.529] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:00.529] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:02.691] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:03.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:03.613] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:03.613] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:06.616] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:06.698] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:06.698] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:07.698] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:09.701] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:09.782] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:09.782] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:12.705] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:12.784] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:12.866] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:12.867] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:15.870] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:15.952] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:15.952] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:17.710] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:18.955] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:19.037] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:19.037] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:22.040] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:22.122] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:22.122] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:25.125] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:25.207] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:25.207] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:28.209] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:28.290] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:28.291] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:31.293] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:31.374] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:31.375] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:34.377] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:34.459] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:34.459] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:37.461] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:37.543] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:37.543] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:39.241] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[RECONNECT] gateway requested I reconnect."]
+[2023-03-08 07:31:39.242] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-b.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-03-08 07:31:39.579] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-b.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 337 ms"]
+[2023-03-08 07:31:39.579] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 9dcbc34687c189be2db8cbe291d992e4, seq: 1195"]
+[2023-03-08 07:31:39.580] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-b-hdh6: 0, heartbeat interval: 41250, took 337 ms"]
+[2023-03-08 07:31:39.834] [9661] (discord.cpp:550): JS console: ["%c[GatewaySocket]","[RESUMED] took 592ms, via \ngateway-prd-us-east1-b-hdh6: 0.595\n|  id_created: 0\n|  session_lookup_time: 0.25\n|  session_lookup_finished: 0.012\n|  discord-sessions-blue-prd-2-208: 0.113, replayed 1 events, new seq: 1196"]
+[2023-03-08 07:31:40.546] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:40.628] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:40.628] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:42.740] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:43.630] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:43.711] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:43.712] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:46.714] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:46.796] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:46.797] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:49.799] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:49.881] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:49.881] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:52.884] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:52.967] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:52.968] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:55.969] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:56.051] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:56.051] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:31:57.762] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:31:59.053] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:59.134] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:31:59.135] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:02.136] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:02.218] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:02.218] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:05.220] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:05.302] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:05.303] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:08.305] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:08.388] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:08.388] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:11.391] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:11.473] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:11.473] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:14.476] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:14.559] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:14.559] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:17.561] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:17.643] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:17.643] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:20.646] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:20.727] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:20.728] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:23.730] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:23.812] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:23.812] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:26.814] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:26.895] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:26.896] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:29.899] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:29.980] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:29.980] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:32.983] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:33.064] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:33.064] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:36.067] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:36.148] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:36.148] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:39.151] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:39.232] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:39.233] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:42.235] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:42.318] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:42.318] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:42.836] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:32:45.320] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:45.401] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:45.402] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:48.404] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:48.485] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:48.486] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:51.488] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:51.570] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:51.570] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:52.850] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:32:54.573] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:54.655] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:54.655] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:32:57.658] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:57.740] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:32:57.740] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:00.742] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:00.824] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:00.824] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:03.827] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:03.909] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:03.909] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:06.911] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:06.993] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:06.993] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:09.995] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:10.076] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:10.077] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:13.079] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:13.161] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:13.162] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:16.164] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:16.247] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:16.248] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:19.250] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:19.332] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:19.332] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:22.335] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:22.417] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:22.418] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:25.420] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:25.503] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:25.503] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:27.873] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:33:28.506] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:28.588] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:28.588] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:28.723] [9661] (discord.cpp:550): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","273453","273469","[object Object]"]
+[2023-03-08 07:33:31.590] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:31.673] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:31.673] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:34.675] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:34.757] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:34.757] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:35.524] [9661] (discord.cpp:550): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-03-08 07:33:35.586] [9661] (discord.cpp:550): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-03-08 07:33:35.605] [9661] (discord.cpp:550): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-03-08 07:33:36.012] [9661] (discord.cpp:550): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-03-08 07:33:36.017] [9661] (discord.cpp:550): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-03-08 07:33:37.759] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:37.841] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:37.841] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:40.843] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:40.925] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:40.925] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:42.874] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:33:43.927] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:44.010] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:44.010] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:47.013] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:47.095] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:47.095] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:47.899] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:33:50.097] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:50.180] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:50.180] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:52.403] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Updated account access token: redprawn"]
+[2023-03-08 07:33:52.872] [9661] (discord.cpp:550): JS console: ["%c[RunningGameStore]","games",""]
+[2023-03-08 07:33:52.886] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Updated account access token: redprawn"]
+[2023-03-08 07:33:52.988] [9661] (discord.cpp:550): JS console: ["%c[Spotify]","Devices updated for redprawn:",""]
+[2023-03-08 07:33:53.182] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:53.263] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:53.264] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:56.266] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:56.348] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:56.348] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:33:59.351] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:59.433] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:33:59.433] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:02.435] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:02.517] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:02.517] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:05.520] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:05.602] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:05.602] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:08.604] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:08.686] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:08.687] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:11.689] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:11.770] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:11.771] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:14.773] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:14.854] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:14.855] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:17.857] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:17.939] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:17.940] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:20.943] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:21.024] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:21.024] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:24.027] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:24.108] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:24.109] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:27.112] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:27.193] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:27.193] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:30.196] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:30.278] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:30.278] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:33.281] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:33.362] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:33.363] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:36.365] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:36.447] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:36.447] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:39.449] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:39.531] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:39.531] [9710] (device_info_linux.cc:78): GetDeviceName
+[2023-03-08 07:34:42.534] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:42.615] [9710] (device_info_linux.cc:45): NumberOfDevices
+[2023-03-08 07:34:42.616] [9710] (device_info_linux.cc:78): GetDeviceName
