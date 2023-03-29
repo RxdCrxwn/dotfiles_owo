@@ -81,7 +81,7 @@ super + shift + b
 #archlinux-logout
 super + p
 #    archlinux-logout
-    ~/.config/polybar/material/scripts/powermenu.sh &
+    ~/.config/polybar/forest/scripts/powermenu.sh &
 #Rofi theme selector
 super + t
     rofi-theme-selector

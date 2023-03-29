@@ -1,6 +1,7 @@
+alacritty/alacritty.yml.16*.bak
 archlinux-logout/
 archlinux-tweak-tool/
-archlinux-welcome-app/
+arcolinux-welcome-app/
 audacious/
 autostart/
 BetterDiscord/
@@ -8,16 +9,17 @@ BetterDiscord\ Installer/
 BraveSoftware/
 calcurse/
 cmus/
+Code\ \-\ OSS/
 configstore/
 conky/
 dconf/
 deadbeef/
-discod/
+discord/
 fontconfig/
 font-manager/
 galculator/
 gconf/
-gimp/
+GIMP/
 google-chrome/
 gpick/
 gtk-2.0/
@@ -49,7 +51,7 @@ spotify/
 termite/
 Thunar/
 transmission/
-Trolltech.conf/
+Trolltech.conf
 unity3d/
 unityhub/
 user-dirs.dirs
@@ -58,6 +60,7 @@ variety/
 vlc/
 volumeicon/
 wireshark/
+xfce4/
 xlunch/
 yad.conf
 yay/
