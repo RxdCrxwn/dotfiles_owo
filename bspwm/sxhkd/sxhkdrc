@@ -81,7 +81,7 @@ super + shift + b
 #archlinux-logout
 super + p
 #    archlinux-logout
-    ~/.config/polybar/forest/scripts/powermenu.sh &
+    ~/.config/polybar/material/scripts/powermenu.sh &
 #Rofi theme selector
 super + t
     rofi-theme-selector
@@ -117,7 +117,7 @@ super + n
 
 #dmenu
 super + space
-	dmenu_run -i -nb '#101010' -nf '#9a9a9a' -sb '#191919' -sf '#fafafa' -fn 'NotoMonoRegular:bold:pixelsize=14' -b
+	dmenu_run -i -nb '#1f1f1f' -nf '#ffffff' -sb '#ffffff' -sf '#1f1f1f' -fn 'NotoMonoRegular:bold:pixelsize=14' -b
 	#xfce4-appfinder
 #################################################################
 # SUPER + SHIFT KEYS
