@@ -82,6 +82,8 @@ super + shift + b
 super + p
 #    archlinux-logout
     ~/.config/polybar/material/scripts/powermenu.sh &
+#    ~/.config/plbr/tokyo/scripts/powermenu &
+
 #Rofi theme selector
 super + t
     rofi-theme-selector
@@ -213,6 +215,8 @@ ctrl + alt + r
 ctrl + alt + s
    escrotum -s
 
+alt + shift + s
+   escrotum
 #alacritty
 #ctrl + alt + Return
 #    alacritty

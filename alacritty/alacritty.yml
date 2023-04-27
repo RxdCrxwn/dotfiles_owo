@@ -13,21 +13,21 @@ window:
 
 font:
   normal:
-    family: JetBrainsMonoNl Nerd Font
-    style: Regular
+    family: Sarasa Term K
+    style: Light
 
   bold:
-    family: JetBrainsMonoNl Nerd Font
-    style: Bold
+    family: Sarasa Term K
+    style: Semi-Bold
 
   italic:
-    family: JetBrainsMonoNl Nerd Font
+    family: Sarasa Term K
     style: Italic
 
   bold_italic:
-    family: JetBrainsMonoNl Nerd Font
-    style: Bold Italic
-  size: 9
+    family: Sarasa Term K
+    style: Semi-Bold Italic
+  size: 10
 
 mouse:
   hide_when_typing: true
@@ -35,7 +35,7 @@ mouse:
 cursor:
   style:
     shape: Underline
-    blinking: Always
+    blinking: Never
 
 key_bindings:
   - { key: Return, mods: Control, action: SpawnNewInstance }

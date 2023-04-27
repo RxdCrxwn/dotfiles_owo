@@ -18,6 +18,7 @@ function run {
 #$HOME/.config/plbr/serenade/launch.sh &
 #$HOME/.config/plbr/fail/launch.sh &
 $HOME/.config/polybar/launch.sh --material &
+#$HOME/.config/plbr/tokyo/launch.sh &
 
 #change your keyboard if you need it
 #setxkbmap -layout be
